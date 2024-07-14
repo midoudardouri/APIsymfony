@@ -1,0 +1,1 @@
+const url ="https://club-otaku.com/API/api.php/" ;
