@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Conteneur pour les livres -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <i class="bi bi-book me-2"></i>
+                        <span>Livre</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- Contenu pour les livres -->
+                        <p>  Vous trouve ici le liste des Livres :
+                                <a class="nav-link" href="{{ path('app_livre_index') }}"><button type="button"class="btn btn-primary">Voir la liste</button></a>
+                           
+                         </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Conteneur pour les auteurs -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <i class="bi bi-person me-2"></i>
+                        <span>Auteur</span>
+                    </div>
+                    <div class="card-body">
+                       <p>  Vous trouve ici le liste des Auteurs :
+                                <a class="nav-link" href="{{ path('app_auteur_index') }}"><button type="button"class="btn btn-primary">Voir la liste</button></a>
+                           
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
